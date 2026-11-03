@@ -1,0 +1,10 @@
+{
+  "name": "SL Events Global",
+  "short_name": "SL Events",
+  "description": "Event planning and management: weddings, birthdays, corporate events, ushers and protocol.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#081230",
+  "theme_color": "#0a1530",
+  "icons": [{"src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}]
+}

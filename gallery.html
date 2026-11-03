@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gallery | SL Events Global</title>
+<meta name="description" content="Browse moments from weddings, birthdays, anniversaries and corporate events planned and managed by SL Events Global.">
+<meta name="theme-color" content="#0a1530">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="site.webmanifest">
+<link rel="canonical" href="https://www.slevents.com/gallery.html">
+<meta property="og:type" content="website"><meta property="og:url" content="https://www.slevents.com/gallery.html">
+<meta property="og:title" content="Gallery | SL Events Global"><meta property="og:description" content="Moments from events planned by SL Events Global."><meta property="og:image" content="h2.PNG">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ImageGallery","name":"SL Events Global Gallery","url":"https://www.slevents.com/gallery.html"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#081230;--navy2:#0f1d44;--navy3:#16295c;--gold:#d9bf86;--gold2:#f1e2b8;--mute:#a9b3cf}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--navy);color:#e9ecf5;font:300 1rem/1.7 'Outfit',sans-serif;overflow-x:hidden;max-width:100vw}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
+.logo,h1,h2{font-family:'Cormorant Garamond',serif;font-weight:500;color:#fff;line-height:1.1}
+.gold-t{background:linear-gradient(100deg,var(--gold),var(--gold2),var(--gold));background-size:200%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sh 6s linear infinite}
+@keyframes sh{to{background-position:200% 0}}
+#pg{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--gold),var(--gold2));z-index:300}
+#ld{position:fixed;inset:0;background:var(--navy);z-index:200;display:grid;place-items:center;transition:opacity .8s,visibility .8s}
+#ld.off{opacity:0;visibility:hidden}
+#ld div{font:500 clamp(2rem,9vw,3.2rem) 'Cormorant Garamond',serif;color:var(--gold);text-align:center}
+#ld i{display:block;height:2px;width:0;background:var(--gold);margin:.8rem auto 0;animation:ld 1.6s infinite}
+@keyframes ld{0%{width:0;margin-left:50%}50%{width:100%;margin-left:0}100%{width:0;margin-left:100%}}
+header{position:fixed;top:0;left:0;right:0;z-index:70;display:flex;justify-content:space-between;align-items:center;padding:calc(.9rem + env(safe-area-inset-top,0px)) 1.2rem .9rem}
+header::before{content:"";position:absolute;inset:0;z-index:-1;background:rgba(8,18,48,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(217,191,134,.25)}
+.logo{font-size:1.5rem}.logo b{color:var(--gold);font-weight:600}
+.back{color:var(--gold);border:1px solid var(--gold);padding:.5rem 1.1rem;border-radius:50px;font-size:.88rem;transition:.4s}.back:hover{background:var(--gold);color:var(--navy)}
+.hero{position:relative;padding:8rem 1.2rem 3rem;text-align:center;overflow:hidden;background:radial-gradient(ellipse at top,var(--navy3),var(--navy) 70%)}
+#fx{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero>*{position:relative}
+.hero h1{font-size:clamp(2.8rem,13vw,6rem)}
+.hero h1 span{display:inline-block;opacity:0;transform:translateY(70px) rotateX(-80deg);animation:up .9s forwards cubic-bezier(.2,.8,.2,1)}
+@keyframes up{to{opacity:1;transform:none}}
+.hero p{color:var(--mute);max-width:44ch;margin:1rem auto 0;opacity:0;animation:up 1s 1s forwards}
+.badge{display:inline-flex;gap:.5rem;align-items:baseline;margin-top:1.6rem;padding:.5rem 1.4rem;border:1px solid var(--gold);border-radius:50px;color:var(--gold);opacity:0;animation:up 1s 1.3s forwards}
+.badge b{font:500 1.6rem 'Cormorant Garamond',serif}
+.line{width:1px;height:60px;margin:2rem auto 0;background:linear-gradient(var(--gold),transparent);animation:ln 1.8s infinite}
+@keyframes ln{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+#g{display:flex;gap:.7rem;width:min(1300px,100% - 1.4rem);margin:1.5rem auto 4rem;align-items:flex-start}
+@media(min-width:800px){#g{gap:1.1rem}}
+.col{flex:1;min-width:0;display:flex;flex-direction:column;gap:.7rem}
+@media(min-width:800px){.col{gap:1.1rem}}
+.col:nth-child(even){margin-top:2rem}
+figure{position:relative;width:100%;border-radius:16px;overflow:hidden;border:1px solid rgba(217,191,134,.25);cursor:zoom-in;background:var(--navy2);opacity:0;transform:translateY(60px) scale(.94);transition:opacity .9s var(--d,0s),transform .9s cubic-bezier(.2,.8,.2,1) var(--d,0s),border-color .4s,box-shadow .4s}
+figure.in{opacity:1;transform:none}
+figure img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+figure::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(8,18,48,.85));opacity:0;transition:.5s}
+figure span{position:absolute;right:.8rem;bottom:.8rem;z-index:2;width:42px;height:42px;border-radius:50%;background:var(--gold);color:var(--navy);display:grid;place-items:center;font-size:1.4rem;transform:scale(0) rotate(-90deg);transition:.5s}
+figure:hover{border-color:var(--gold);box-shadow:0 16px 40px rgba(0,0,0,.45)}figure:hover img{transform:scale(1.1)}figure:hover::after{opacity:1}figure:hover span{transform:none}
+.empty{width:100%;text-align:center;color:var(--mute);padding:3rem 1rem}
+/* lightbox */
+#lb{position:fixed;inset:0;background:rgba(5,12,32,.97);z-index:100;display:none;place-items:center;padding:4.2rem .8rem 3.4rem}
+#lb.on{display:grid;animation:fi .4s}@keyframes fi{from{opacity:0}}
+#lbi{max-height:100%;max-width:100%;border-radius:12px;border:1px solid var(--gold);object-fit:contain}
+#lbi.sw{animation:sw .5s cubic-bezier(.2,.8,.2,1)}@keyframes sw{from{opacity:0;transform:scale(.92)}}
+.lbb{position:absolute;width:46px;height:46px;border-radius:50%;border:1px solid var(--gold);background:rgba(8,18,48,.7);color:var(--gold);font-size:1.4rem;cursor:pointer;transition:.3s}.lbb:hover{background:var(--gold);color:var(--navy)}
+#x{top:calc(.8rem + env(safe-area-inset-top,0px));right:.8rem}#pv{left:.6rem;top:50%}#nx{right:.6rem;top:50%}
+#lc{position:absolute;bottom:calc(1rem + env(safe-area-inset-bottom,0px));left:0;right:0;text-align:center;color:var(--gold);letter-spacing:.15em;font-size:.85rem}
+/* cta + footer */
+.cta{text-align:center;padding:4.5rem 1.2rem;background:linear-gradient(rgba(8,18,48,.85),rgba(8,18,48,.92)),radial-gradient(circle at 50% 0,var(--navy3),var(--navy))}
+.cta h2{font-size:clamp(2rem,7vw,3.2rem);margin-bottom:1.4rem}
+.btn{display:inline-block;padding:.9rem 1.8rem;border-radius:50px;background:linear-gradient(100deg,var(--gold),var(--gold2));color:var(--navy);font-weight:400;transition:.4s}.btn:hover{box-shadow:0 0 30px rgba(217,191,134,.5);transform:translateY(-3px)}
+footer{text-align:center;padding:2rem 1rem calc(2rem + env(safe-area-inset-bottom,0px));border-top:1px solid rgba(217,191,134,.3);color:var(--mute);font-size:.85rem;background:#050c20}footer a{color:var(--gold)}
+.fab{position:fixed;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:.7rem;z-index:80}
+.fab a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-size:1.4rem;box-shadow:0 6px 20px rgba(0,0,0,.45);animation:pu 2.4s infinite}
+.wa{background:#25d366;color:#fff}.ph{background:var(--gold);color:var(--navy);animation-delay:1.2s!important}
+@keyframes pu{0%{box-shadow:0 0 0 0 rgba(217,191,134,.55)}70%,100%{box-shadow:0 0 0 18px rgba(217,191,134,0)}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important;transition-duration:.01s!important}}
+</style>
+</head>
+<body>
+<div id="pg"></div>
+<div id="ld"><div>SL Events<i></i></div></div>
+<header><a href="index.html" class="logo">SL <b>Events</b></a><a class="back" href="index.html">← Back home</a></header>
+<section class="hero">
+  <canvas id="fx"></canvas>
+  <h1 id="ht" class="gold-t">Our Gallery</h1>
+  <p>Moments we've helped create, one celebration at a time.</p>
+  <div class="badge"><b id="cnt">0</b> moments</div>
+  <div class="line"></div>
+</section>
+<main id="g" aria-label="Photo gallery"></main>
+<div id="lb"><button class="lbb" id="x" aria-label="Close">×</button><button class="lbb" id="pv" aria-label="Previous">‹</button><button class="lbb" id="nx" aria-label="Next">›</button><img id="lbi" alt="Enlarged event photo"><div id="lc"></div></div>
+<section class="cta"><h2 class="gold-t">Love what you see?</h2><a class="btn" href="https://wa.me/2348142724428?text=Hello%20SLEVENTS" target="_blank" rel="noopener">Plan your event with us</a></section>
+<footer>
+  <p>© <span id="yr"></span> SL Events Global · <a href="tel:+2348142724428">+234 814 272 4428</a> · <a href="index.html#contact">Contact</a></p>
+</footer>
+<div class="fab">
+  <a class="wa" href="https://wa.me/2348142724428?text=Hello%20SLEVENTS" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">✉</a>
+  <a class="ph" href="tel:+2348142724428" aria-label="Call SL Events">✆</a>
+</div>
+<script>
+const $=s=>document.querySelector(s);
+$('#yr').textContent=new Date().getFullYear();
+const ht=$('#ht');ht.innerHTML=ht.textContent.split(' ').map((w,i)=>`<span style="animation-delay:${.4+i*.2}s">${w}&nbsp;</span>`).join('');
+// particles
+const cv=$('#fx'),cx=cv.getContext('2d');let W,H;const P=[];
+function rs(){W=cv.width=cv.offsetWidth;H=cv.height=cv.offsetHeight}rs();addEventListener('resize',rs);
+for(let i=0;i<40;i++)P.push({x:Math.random(),y:Math.random(),r:Math.random()*2+.6,s:Math.random()*.0007+.0002,a:Math.random()*6});
+(function f(){cx.clearRect(0,0,W,H);P.forEach(p=>{p.y-=p.s;p.a+=.02;if(p.y<0)p.y=1;cx.globalAlpha=.4+Math.sin(p.a)*.4;cx.fillStyle='#f1e2b8';cx.beginPath();cx.arc(p.x*W,p.y*H,p.r,0,7);cx.fill()});requestAnimationFrame(f)})();
+addEventListener('scroll',()=>{$('#pg').style.width=scrollY/Math.max(1,document.documentElement.scrollHeight-innerHeight)*100+'%'},{passive:true});
+// discover images: folder listing first, then h1,h2,h3... probing
+const g=$('#g');let items=[];
+const probe=s=>new Promise(r=>{const i=new Image();i.onload=()=>r({s,w:i.naturalWidth,h:i.naturalHeight});i.onerror=()=>r(null);i.src=s});
+async function discover(){
+  try{const r=await fetch('./');if(!r.ok)throw 0;
+    const t=await r.text(),names=[...new Set([...new DOMParser().parseFromString(t,'text/html').querySelectorAll('a[href]')].map(a=>decodeURIComponent(a.getAttribute('href').split('?')[0].split('/').pop())).filter(h=>/\.(jpe?g|png|webp)$/i.test(h)))].sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}));
+    if(!names.length)throw 0;return(await Promise.all(names.map(probe))).filter(Boolean)}
+  catch(e){const out=[];let miss=0;
+    for(let k=1;k<=300&&miss<10;k++){let hit=null;for(const x of['jpg','JPG','jpeg','png','PNG']){hit=await probe('h'+k+'.'+x);if(hit)break}hit?(out.push(hit),miss=0):miss++}
+    return out}
+}
+// stable masonry: sizes are known before anything is drawn, so nothing jumps
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.08});
+let cols=0;
+const nc=()=>innerWidth<600?2:innerWidth<1000?3:4;
+function layout(){cols=nc();g.innerHTML='';
+  if(!items.length){g.innerHTML='<p class="empty">No photos found yet.</p>';return}
+  const cs=[],hs=Array(cols).fill(0);
+  for(let i=0;i<cols;i++){const d=document.createElement('div');d.className='col';g.appendChild(d);cs.push(d)}
+  items.forEach((it,i)=>{const k=hs.indexOf(Math.min(...hs));hs[k]+=it.h/it.w;
+    const f=document.createElement('figure');f.style.aspectRatio=it.w+'/'+it.h;f.style.setProperty('--d',(cs[k].children.length%3)*.1+'s');
+    const im=new Image();im.src=it.s;im.alt='SL Events Global event photo '+(i+1);im.decoding='async';
+    f.append(im);f.insertAdjacentHTML('beforeend','<span>+</span>');f.onclick=()=>openLb(i);cs[k].append(f);io.observe(f)})}
+let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{if(nc()!==cols)layout()},200)});
+discover().then(r=>{items=r;layout();
+  let c=0;const n=items.length,t=setInterval(()=>{c+=Math.max(1,Math.ceil(n/40));if(c>=n){c=n;clearInterval(t)}$('#cnt').textContent=c},30);
+  $('#ld').classList.add('off')});
+// lightbox
+const lb=$('#lb'),lbi=$('#lbi');let cur=0;
+function setImg(){lbi.classList.remove('sw');void lbi.offsetWidth;lbi.src=items[cur].s;lbi.classList.add('sw');$('#lc').textContent=(cur+1)+' / '+items.length}
+function openLb(i){cur=i;lb.classList.add('on');document.body.style.overflow='hidden';setImg()}
+function closeLb(){lb.classList.remove('on');document.body.style.overflow=''}
+function step(d){cur=(cur+d+items.length)%items.length;setImg()}
+$('#x').onclick=closeLb;$('#pv').onclick=()=>step(-1);$('#nx').onclick=()=>step(1);
+lb.onclick=e=>{if(e.target===lb)closeLb()};
+addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key==='Escape')closeLb();if(e.key==='ArrowRight')step(1);if(e.key==='ArrowLeft')step(-1)});
+let sx=0;lb.addEventListener('touchstart',e=>sx=e.touches[0].clientX,{passive:true});
+lb.addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-sx;if(Math.abs(d)>50)step(d<0?1:-1)});
+</script>
+</body>
+</html>
