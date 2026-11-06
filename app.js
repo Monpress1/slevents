@@ -1,3 +1,7 @@
+const root=document.documentElement,L=document.querySelector('#loader'),C=document.querySelector('#curtain');
+// loader first: never waits for images, so slow connections can't get stuck on it
+if(root.classList.contains('rt')){C.className='out';setTimeout(()=>{root.classList.remove('rt');C.className=''},700)}
+else setTimeout(()=>{L.classList.add('off');try{sessionStorage.sl=1}catch(e){}},1300);
 const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);
 const page=document.body.dataset.p;
 $('#yr').textContent=new Date().getFullYear();
@@ -7,11 +11,7 @@ const ht=$('#ht');if(ht)ht.innerHTML=ht.textContent.split(' ').map((w,i)=>`<span
 // reveal + counters
 const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.15});
 const co=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){const el=x.target,n=+el.dataset.n;let c=0;const t=setInterval(()=>{c+=Math.ceil(n/50);if(c>=n){c=n;clearInterval(t)}el.textContent=c+(n>=100?'+':'')},30);co.unobserve(el)}}));
-$$('.rv').forEach(e=>io.observe(e));$$('[data-n]').forEach(e=>co.observe(e));
-// loader (first visit) and curtain (page to page)
-const L=$('#loader'),C=$('#curtain'),root=document.documentElement;
-if(root.classList.contains('rt')){C.className='out';setTimeout(()=>{root.classList.remove('rt');C.className=''},700)}
-else addEventListener('load',()=>setTimeout(()=>{L.classList.add('off');try{sessionStorage.sl=1}catch(e){}},900));
+root.classList.add('js');$$('.rv').forEach(e=>io.observe(e));$$('[data-n]').forEach(e=>co.observe(e));
 document.addEventListener('click',e=>{const a=e.target.closest('a[href]');if(!a||e.defaultPrevented||e.metaKey||e.ctrlKey||e.shiftKey||a.target==='_blank')return;
   const h=a.getAttribute('href');if(!/^[\w-]+\.html(#.*)?$/.test(h)||h.split('#')[0]===location.pathname.split('/').pop())return;
   e.preventDefault();C.className='in';setTimeout(()=>location.href=h,560)});
