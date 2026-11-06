@@ -16,7 +16,7 @@
 <meta property="og:description" content="Weddings, birthdays, corporate events, ushers and protocol, vendor management and more.">
 <meta property="og:image" content="h1.PNG">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"EventPlanner","name":"SL Events Global","telephone":"+2348142724428","description":"Professional event planning and management company.","image":"h1.PNG","areaServed":"NG","makesOffer":["Event Planning & Management","Wedding Planning","Corporate Event Management","Ushers & Protocol Services"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"EventPlanner","name":"SL Events Global","telephone":"+2348142724428","email":"Bafolabi629@gmail.com","description":"Professional event planning and management company.","image":"h1.PNG","areaServed":"NG","makesOffer":["Event Planning & Management","Wedding Planning","Corporate Event Management","Ushers & Protocol Services"]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
@@ -142,6 +142,17 @@ form{display:grid;gap:1rem}
 input,select,textarea{width:100%;padding:1rem;background:var(--navy2);border:1px solid rgba(217,191,134,.3);border-radius:12px;color:#fff;font:inherit;transition:.3s}
 input:focus,select:focus,textarea:focus{outline:0;border-color:var(--gold);box-shadow:0 0 0 3px rgba(217,191,134,.18)}
 select option{background:var(--navy2)}textarea{min-height:130px;resize:vertical}
+/* booking form */
+form label,legend{display:grid;gap:.4rem;font-size:.82rem;color:var(--gold);letter-spacing:.06em}
+legend{margin-bottom:.6rem;padding:0;display:block}fieldset{border:0;min-width:0}
+.f2{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr))}
+input[type=date]{color-scheme:dark}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem}
+.chips label{position:relative;display:block;font-size:.9rem;color:var(--ink);letter-spacing:0}
+.chips input{position:absolute;inset:0;width:100%;height:100%;opacity:0;padding:0;margin:0;cursor:pointer}
+.chips span{display:block;padding:.6rem 1.1rem;border:1px solid rgba(217,191,134,.4);border-radius:50px;transition:.3s}
+.chips input:checked+span{background:linear-gradient(100deg,var(--gold),var(--gold2));color:var(--navy);border-color:transparent}
+.chips input:focus-visible+span{box-shadow:0 0 0 3px rgba(217,191,134,.3)}
 /* footer */
 footer{background:#050c20;border-top:1px solid rgba(217,191,134,.3);padding:3.5rem 0 calc(1.5rem + var(--safe-b))}
 .fg{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr))}
@@ -167,7 +178,7 @@ footer h3{font-size:1.3rem;color:var(--gold);margin-bottom:.8rem}footer li{list-
 </header>
 <nav id="nav" aria-label="Main">
     <a href="#home" data-p="home">Home</a><a href="#about" data-p="about">About</a><a href="#services" data-p="services">Services</a><a href="gallery.html">Gallery</a><a href="#contact" data-p="contact">Contact</a>
-    <div class="mfoot"><a href="tel:+2348142724428">+234 814 272 4428</a><a href="https://wa.me/2348142724428?text=Hello%20SLEVENTS" target="_blank" rel="noopener">Chat on WhatsApp</a><span>Turning your vision into beautiful memories</span></div>
+    <div class="mfoot"><a href="tel:+2348142724428">+234 814 272 4428</a><a href="https://wa.me/2348142724428?text=Hello%20SLEVENTS" target="_blank" rel="noopener">Chat on WhatsApp</a><a href="mailto:Bafolabi629@gmail.com">Bafolabi629@gmail.com</a><span>Turning your vision into beautiful memories</span></div>
 </nav>
 
 <main>
@@ -220,12 +231,10 @@ footer h3{font-size:1.3rem;color:var(--gold);margin-bottom:.8rem}footer li{list-
   <section class="band"><div class="wrap rv"><h2 class="gold-t">Your vision, beautifully done</h2><a class="btn fill" href="#contact">Start planning today</a></div></section>
   <section class="blk" style="padding-inline:0"><div class="wrap rv ctr"><span class="sub">KIND WORDS</span><h2>Our clients say it best</h2></div>
     <div class="tr" id="tr">
-      <div class="tc"><div class="stars">★★★★★</div><p>I'm so thankful SL Events was the one that organised our wedding. Everything ran on time and we simply enjoyed our day.</p><b>Adaeze Okonkwo</b><small>Wedding</small></div>
-      <div class="tc"><div class="stars">★★★★★</div><p>Our product launch looked world-class. They handled vendors, guests and protocol so well that my team could focus on the brand.</p><b>Tunde Adebayo</b><small>Corporate launch</small></div>
-      <div class="tc"><div class="stars">★★★★★</div><p>From the ushers to the décor, every detail was in place. Our families are still talking about it. Thank you, SL Events!</p><b>Ngozi Eze</b><small>Traditional ceremony</small></div>
-      <div class="tc"><div class="stars">★★★★☆</div><p>A 25th anniversary dinner we will never forget. Calm, professional and warm. I'm grateful they were the ones we trusted.</p><b>Ibrahim Musa</b><small>Anniversary dinner</small></div>
-      <div class="tc"><div class="stars">★★★★★</div><p>My mother's 60th birthday was beautiful. Guests were well looked after and nothing was left to chance. God bless SL Events.</p><b>Funke Balogun</b><small>Birthday celebration</small></div>
-      <div class="tc"><div class="stars">★★★★☆</div><p>Smooth registration, courteous ushers and great coordination. We will definitely call SL Events for our next conference.</p><b>Chidi Nwosu</b><small>Corporate conference</small></div>
+      <div class="tc"><div class="stars">★★★★★</div><p>SL Events made our wedding day stress-free and beautiful. Everything ran smoothly, and I'm truly thankful they were the ones who organised it.</p><b>Mrs Sherifat</b><small>Wedding event</small></div>
+      <div class="tc"><div class="stars">★★★★★</div><p>From the first meeting to the last guest leaving, the team was professional and caring. We are so grateful that SL Events organised our ceremony.</p><b>Mr and Mrs Bello</b><small>Valued clients</small></div>
+      <div class="tc"><div class="stars">★★★★☆</div><p>Well planned, well coordinated, and the ushers were courteous. I'm thankful to SL Events for an event that went exactly as we hoped.</p><b>Aderibigbe Temidayo</b><small>Valued client</small></div>
+      <div class="tc"><div class="stars">★★★★★</div><p>Mr Williams' 70th birthday was a day our whole family will never forget. Thank you, SL Events, for taking care of everything.</p><b>Williams family</b><small>Mr Williams' 70th birthday</small></div>
     </div></section>
   <section class="blk" style="background:var(--navy2)"><div class="wrap" style="max-width:760px">
     <div class="rv"><span class="sub">GOOD TO KNOW</span><h2>Common questions</h2></div>
@@ -285,12 +294,17 @@ footer h3{font-size:1.3rem;color:var(--gold);margin-bottom:.8rem}footer li{list-
     <div class="rv">
       <a class="ci" href="tel:+2348142724428"><div class="ic">✆</div><div><small>Call us</small>+234 814 272 4428</div></a>
       <a class="ci" href="https://wa.me/2348142724428?text=Hello%20SLEVENTS" target="_blank" rel="noopener"><div class="ic">✉</div><div><small>WhatsApp</small>Chat with us now</div></a>
+      <a class="ci" href="mailto:Bafolabi629@gmail.com"><div class="ic">@</div><div><small>Email us</small>Bafolabi629@gmail.com</div></a>
     </div>
     <form class="rv d1" id="cf">
-      <input name="n" placeholder="Your name" required autocomplete="name">
-      <select name="t" required><option value="">Type of event</option><option>Wedding</option><option>Birthday / Anniversary</option><option>Corporate Event</option><option>Consultation</option><option>Other</option></select>
-      <input name="d" placeholder="Event date (optional)">
-      <textarea name="m" placeholder="Tell us about your event" required></textarea>
+      <div class="f2"><label>Full name<input name="n" required autocomplete="name" placeholder="Your name"></label><label>Phone / WhatsApp<input name="p" type="tel" inputmode="tel" required autocomplete="tel" placeholder="e.g. 0801 234 5678"></label></div>
+      <label>Email (optional)<input name="e" type="email" autocomplete="email" placeholder="you@example.com"></label>
+      <div class="f2"><label>Type of event<select name="t" required><option value="">Select</option><option>Wedding</option><option>Birthday</option><option>Anniversary</option><option>Corporate Event</option><option>Consultation</option><option>Other</option></select></label><label>Event date<input name="d" type="date"></label></div>
+      <label>Event location / venue<input name="l" required placeholder="Venue, city or state"></label>
+      <label>Expected number of guests<input name="g" type="number" min="1" inputmode="numeric" required placeholder="e.g. 250"></label>
+      <fieldset><legend>Estimated budget</legend><div class="chips"><label><input type="radio" name="b" value="500000" required><span>₦500k</span></label><label><input type="radio" name="b" value="1000000"><span>₦1m</span></label><label><input type="radio" name="b" value="2000000"><span>₦2m</span></label><label><input type="radio" name="b" value="3000000"><span>₦3m</span></label><label><input type="radio" name="b" value="custom"><span>Custom</span></label></div><input id="bc" name="bc" type="number" min="1" inputmode="numeric" placeholder="Enter your budget in ₦" hidden style="margin-top:.8rem"></fieldset>
+      <fieldset><legend>Services needed (optional)</legend><div class="chips"><label><input type="checkbox" name="s" value="Event Planning & Management"><span>Event Planning & Management</span></label><label><input type="checkbox" name="s" value="Event Coordination"><span>Event Coordination</span></label><label><input type="checkbox" name="s" value="Wedding Planning"><span>Wedding Planning</span></label><label><input type="checkbox" name="s" value="Birthday & Anniversary"><span>Birthday & Anniversary</span></label><label><input type="checkbox" name="s" value="Corporate Event"><span>Corporate Event</span></label><label><input type="checkbox" name="s" value="Guest Management"><span>Guest Management</span></label><label><input type="checkbox" name="s" value="Ushers & Protocol"><span>Ushers & Protocol</span></label><label><input type="checkbox" name="s" value="Vendor Management"><span>Vendor Management</span></label><label><input type="checkbox" name="s" value="Consultation"><span>Consultation</span></label></div></fieldset>
+      <label>Additional details<textarea name="m" placeholder="Theme, colours, special requests..."></textarea></label>
       <button class="btn fill" type="submit">Send on WhatsApp</button>
     </form>
   </div></section>
@@ -302,7 +316,7 @@ footer h3{font-size:1.3rem;color:var(--gold);margin-bottom:.8rem}footer li{list-
     <div class="fg">
       <div><a href="#home" class="logo">SL <b>Events</b></a><p style="color:var(--mute);margin-top:.8rem;font-size:.92rem">Turning your vision into beautiful memories.</p></div>
       <div><h3>Explore</h3><ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="#contact">Contact</a></li></ul></div>
-      <div><h3>Reach us</h3><ul><li><a href="tel:+2348142724428">+234 814 272 4428</a></li><li><a href="https://wa.me/2348142724428?text=Hello%20SLEVENTS" target="_blank" rel="noopener">WhatsApp us</a></li></ul></div>
+      <div><h3>Reach us</h3><ul><li><a href="tel:+2348142724428">+234 814 272 4428</a></li><li><a href="https://wa.me/2348142724428?text=Hello%20SLEVENTS" target="_blank" rel="noopener">WhatsApp us</a></li><li><a href="mailto:Bafolabi629@gmail.com">Bafolabi629@gmail.com</a></li></ul></div>
     </div>
     <div class="cp">© <span id="yr"></span> SL Events Global. All rights reserved.</div>
   </div>
@@ -362,9 +376,20 @@ const cv=$('#fx'),cx=cv.getContext('2d');let W,H,P=[];
 function rs(){W=cv.width=cv.offsetWidth;H=cv.height=cv.offsetHeight}rs();addEventListener('resize',rs);
 for(let i=0;i<45;i++)P.push({x:Math.random(),y:Math.random(),r:Math.random()*2+.6,s:Math.random()*.0007+.0002,a:Math.random()*6});
 (function f(){cx.clearRect(0,0,W,H);P.forEach(p=>{p.y-=p.s;p.a+=.02;if(p.y<0)p.y=1;cx.globalAlpha=.4+Math.sin(p.a)*.4;cx.fillStyle='#f1e2b8';cx.beginPath();cx.arc(p.x*W,p.y*H,p.r,0,7);cx.fill()});requestAnimationFrame(f)})();
-// contact form -> WhatsApp
-$('#cf').onsubmit=e=>{e.preventDefault();const f=e.target,m=`Hello SLEVENTS, my name is ${f.n.value}. I'm planning a ${f.t.value}${f.d.value?' on '+f.d.value:''}. ${f.m.value}`;
-  open('https://wa.me/2348142724428?text='+encodeURIComponent(m),'_blank')};
+// booking form -> formatted WhatsApp message
+const fmt=n=>'₦'+Number(n).toLocaleString('en-NG');
+$$('input[name=b]').forEach(r=>r.onchange=()=>{const c=$('input[name=b]:checked').value==='custom',i=$('#bc');i.hidden=!c;i.required=c;if(c)i.focus()});
+$('#cf').onsubmit=e=>{e.preventDefault();const f=e.target,v=n=>f[n].value.trim(),o=(c,x)=>c?x:null;
+  const bv=f.b.value,bud=bv==='custom'?fmt(f.bc.value):fmt(bv);
+  const dt=v('d')?new Date(v('d')).toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long',year:'numeric',timeZone:'UTC'}):'To be confirmed';
+  const sv=[...f.querySelectorAll('input[name=s]:checked')].map(x=>x.value).join(', ');
+  const line='━━━━━━━━━━━━━━';
+  const msg=['Hello SLEVENTS 👋','I would like to book an event with you.','',line,'✨ *EVENT BOOKING REQUEST* ✨',line,'',
+    '👤 *Name:* '+v('n'),'📞 *Phone:* '+v('p'),o(v('e'),'📧 *Email:* '+v('e')),'',
+    '🎉 *Event:* '+f.t.value,'📅 *Date:* '+dt,'📍 *Location:* '+v('l'),'👥 *Expected guests:* '+v('g'),'💰 *Estimated budget:* '+bud,
+    o(sv,''),o(sv,'🛎️ *Services needed:* '+sv),o(v('m'),''),o(v('m'),'📝 *Details:* '+v('m')),'',line,'Thank you! 🙏'].filter(x=>x!==null).join('\n');
+  open('https://wa.me/2348142724428?text='+encodeURIComponent(msg),'_blank')};
 </script>
 </body>
 </html>
+
