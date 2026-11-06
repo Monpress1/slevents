@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.slevents.com/sitemap.xml
+Sitemap: https://slevents.com.ng/sitemap.xml
